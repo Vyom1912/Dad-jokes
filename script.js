@@ -30,7 +30,7 @@ const jokeBtn = document.querySelector("#jokebtn");
 //  (ii) async await
 // ---------------------------------------------------
 
-const generateJokes = async () => {
+async function generateJokes() {
   try {
     const setHeader = {
       headers: {
@@ -44,7 +44,7 @@ const generateJokes = async () => {
   } catch (error) {
     console.log(`the error is ${error}`);
   }
-};
+}
 
 // ---------------------------------------------------
 
